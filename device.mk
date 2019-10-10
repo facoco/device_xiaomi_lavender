@@ -95,6 +95,10 @@ PRODUCT_PACKAGES += \
     libldacBT_dec \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
+# Bluetooth 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
