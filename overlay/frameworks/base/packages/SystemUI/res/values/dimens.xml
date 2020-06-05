@@ -22,7 +22,10 @@
     <dimen name="volume_dialog_panel_transparent_padding_left">4dp</dimen>
 
     <!-- for 20dp of padding at 2.75px/dp at default density -->
-    <dimen name="rounded_corner_content_padding">55px</dimen>
+    <dimen name="rounded_corner_content_padding">16dp</dimen>
+
+    <!-- for statusbar padding -->
+    <dimen name="status_bar_extra_padding">8dp</dimen>
 
     <!-- Padding for the system icons on the keyguard (when no multi user switch is showing).
     The icons always have a 4dp padding in the container so we only need 41 extra px of padding
