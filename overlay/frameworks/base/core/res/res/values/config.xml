@@ -1159,4 +1159,8 @@
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
     <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
     <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
+
+    <!-- If true, the camera will be used more often. -->
+    <bool name="config_adaptive_sleep_available">false</bool>
+
 </resources>
