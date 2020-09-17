@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_lavender.mk
+    $(LOCAL_DIR)/havoc_lavender.mk

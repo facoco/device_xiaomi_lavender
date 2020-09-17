@@ -12,17 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit dalvik from native
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+# Inherit dalvik from vendor
+$(call inherit-product, vendor/havoc/config/phone-xhdpi-4096-dalvik-heap.mk)
 
-# Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common HavocOS stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-XTENDED_BUILD_TYPE := OFFICIAL
-XTENDED_MAINTAINER := ⚡Hazama25⚡
+HAVOC_BUILD_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xtended_lavender
+PRODUCT_NAME := havoc_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
