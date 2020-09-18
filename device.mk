@@ -447,8 +447,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libgui_vendor \
     libstdc++.vendor \
+    libpowermanager \
+    vndk-ext \
     vndk_package \
-    libpowermanager
+    com.android.vndk.current.on_vendor
 
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
