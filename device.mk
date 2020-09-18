@@ -81,6 +81,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
+# Binder
+PRODUCT_PACKAGES += \
+    libhwbinder \
+    libhwbinder.vendor
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
