@@ -448,6 +448,10 @@ PRODUCT_PACKAGES += \
     vndk_package \
     libpowermanager
 
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
