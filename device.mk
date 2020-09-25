@@ -402,7 +402,8 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    camera.sdm660_shim
+    camera.sdm660_shim \
+    libdpmframework_shim
 
 # Moar Packages for R
 PRODUCT_HOST_PACKAGES += \
