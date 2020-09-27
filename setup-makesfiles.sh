@@ -17,9 +17,9 @@ INITIAL_COPYRIGHT_YEAR=2019
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-DU_ROOT="${MY_DIR}/../../.."
+ARROW_ROOT="${MY_DIR}/../../.."
 
-HELPER="$DU_ROOT"/vendor/du/build/tools/extract_utils.sh
+HELPER="$ARROW_ROOT"/vendor/arrow/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -27,14 +27,12 @@ fi
 . "$HELPER"
 
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${DU_ROOT}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${ARROW_ROOT}"
 
 # Copyright headers and guards
 write_headers
 
 write_makefiles "$MY_DIR"/proprietary-files.txt true
-echo "" >> "$PRODUCTMK"
-write_makefiles "$MY_DIR"/proprietary-files-qc.txt true
 
 # Finish
 write_footers
