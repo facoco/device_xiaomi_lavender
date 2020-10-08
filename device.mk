@@ -401,6 +401,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.sdm660_shim
 
+# Moar Packages for R
+PRODUCT_HOST_PACKAGES += \
+    signapk \
+    avbtool \
+    brotli \
+    aapt2
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -409,7 +416,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-    telephony-ext
+    telephony-ext \
+    librilutils
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
