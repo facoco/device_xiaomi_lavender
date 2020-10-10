@@ -19,6 +19,7 @@ $(call inherit-product, device/xiaomi/lavender/dalvikheap.mk)
 # Inherit some common ArrowOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+DEVICE_MAINTAINER := Hazama25, ak940s
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := arrow_lavender
