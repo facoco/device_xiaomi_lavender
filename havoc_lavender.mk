@@ -12,13 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit dalvik from vendor
-$(call inherit-product, vendor/havoc/config/phone-xhdpi-4096-dalvik-heap.mk)
+# Inherit dalvik from device
+$(call inherit-product, device/xiaomi/lavender/dalvikheap.mk)
 
 # Inherit some common HavocOS stuff.
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-HAVOC_BUILD_TYPE := OFFICIAL
+HAVOC_BUILD_TYPE := MINKAN
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := havoc_lavender
