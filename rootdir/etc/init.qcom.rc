@@ -410,6 +410,8 @@ on property:sys.boot_completed=1
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
     setprop persist.vendor.qti.telephony.vt_cam_interface 2
+    #Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1
 
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
