@@ -88,6 +88,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth & FM
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.service.bdroid.sibs=false \
     bt.max.hfpclient.connections=1 \
     ro.vendor.fm.use_audio_session=true \
     vendor.fm.a2dp.conc.disabled=true \
