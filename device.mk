@@ -9,6 +9,8 @@ $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Soong
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msm8998
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/lavender
 
