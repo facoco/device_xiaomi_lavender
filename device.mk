@@ -457,7 +457,7 @@ PRODUCT_BOOT_JARS += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts \
-    Dirac
+    XiaomiDoze
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
