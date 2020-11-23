@@ -92,7 +92,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.fm.use_audio_session=true \
     vendor.fm.a2dp.conc.disabled=true \
     vendor.hw.fm.init=0 \
-    vendor.qcom.bluetooth.soc=cherokee
+    vendor.qcom.bluetooth.soc=cherokee \
+    persist.vendor.service.bdroid.sibs=false
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.bluetooth.soc=cherokee
