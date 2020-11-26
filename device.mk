@@ -425,8 +425,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libgui_vendor \
     libstdc++.vendor \
-    vndk-ext \
-    vndk_package
+    vndk_package \
+    libpowermanager
 
 # WiFi
 PRODUCT_PACKAGES += \
