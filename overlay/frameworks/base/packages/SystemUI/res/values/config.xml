@@ -49,4 +49,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     
     <!-- FPSInfoService Fps file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
+
+    <!-- The number of rows in the QuickSettings -->
+    <integer name="quick_settings_max_rows">2</integer>
 </resources>
